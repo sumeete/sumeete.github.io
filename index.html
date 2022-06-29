@@ -5,6 +5,7 @@
     const dateArr = new Date().toLocaleDateString('en-US', {timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   timeZoneName: 'short',}).split(' ');
   console.log(dateArr[dateArr.length - 1]);
+   alert(dateArr[dateArr.length - 1]);
     return dateArr[dateArr.length - 1];
 })()
 </script>
