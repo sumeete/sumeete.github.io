@@ -1,7 +1,7 @@
 <html>
 
 <script>
-document.getElementById(‘root’).innerText = (function getTimezone() {
+document.getElementById('root').innerText = (function getTimezone() {
     const dateArr = new Date().toLocaleDateString('en-US', {timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   timeZoneName: 'short',}).split(' ');
     return dateArr[dateArr.length - 1];
