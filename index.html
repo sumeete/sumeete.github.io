@@ -1,6 +1,11 @@
 <html>
 
-<script>
+
+  
+  <body>Hello World!
+    <div id="root"> </div>
+      </body>
+  <script>
 document.getElementById('root').innerText = (function getTimezone() {
     const dateArr = new Date().toLocaleDateString('en-US', {timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   timeZoneName: 'short',}).split(' ');
@@ -8,8 +13,4 @@ document.getElementById('root').innerText = (function getTimezone() {
 })()
 
 </script>
-  
-  <body>Hello World!</body>
-    <div id="root"> </div>
-  
 </html>
